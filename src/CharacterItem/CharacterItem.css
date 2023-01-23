@@ -21,7 +21,16 @@ article:hover {
 }
 
 .blobs-container {
-	display: flex;
+    display: flex;
 }
 
-
+@media (max-width: 767px) {
+    article {
+        flex-direction: column;
+        height: initial;
+    }
+    .detailImg {
+        height: 300px;
+        object-fit: cover;
+    }
+}

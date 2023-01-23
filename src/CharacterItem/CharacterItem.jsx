@@ -6,7 +6,7 @@ const CharacterItem = ({ item }) => {
         <>
             <Link to={`/item/${item.id}`} key={item.id}>
                 <article>
-                    <img src={item.image} alt={item.name} />
+                    <img className="detailImg" src={item.image} alt={item.name} />
                     <div className="cardContent">
                         <p>Name: {item.name}</p>
                         <span className="status">Status: {item.status} - {item.species}</span>

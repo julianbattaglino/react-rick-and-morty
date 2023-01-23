@@ -3,3 +3,21 @@
     background-position: center;
     background-size: cover;
 }
+
+.detailContainer {
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+.detailContent {
+    padding-left: 15px;
+}
+
+@media (max-width: 767px) {
+    .detailContainer {
+        flex-direction: column;
+    }
+    .detailContent {
+        padding-left: 0;
+    }
+    }

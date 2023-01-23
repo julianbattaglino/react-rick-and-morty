@@ -31,16 +31,18 @@ const CharacterDetail = () => {
             </Link>
             {
                 item && (
-                    <div>
+                    <div className="detailContainer">
                         <div>
-                            <img src={item.image} alt={item.name} />
+                            <img className="detailImg" src={item.image} alt={item.name} />
                         </div>
+                        <div className="detailContent">
                             <p>Name: {item.name}</p>
                             <span className="status">Status: {item.status} - {item.species}</span>
                             <p>Gender: {item.gender}</p>
                             <p>Last known location:: {item.location.name}</p>
                             <p>Origin: {item.origin.name}</p>
                             <p>First seen in: {item.episode[0]}</p>
+                        </div>
                     </div>
                 )
             }

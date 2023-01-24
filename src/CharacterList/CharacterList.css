@@ -1,5 +1,11 @@
 .itemsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(600px, 1fr));
-    gap: 1rem;    
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 1rem;
+}
+
+@media (max-width: 767px) {
+    .itemsGrid {
+        grid-template-columns: 1fr;
+    }
 }

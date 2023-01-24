@@ -20,7 +20,7 @@ const CharacterListContainer = () => {
 
     return (
         <div className="item-list-container">
-            <h1 className="textCenter">The Rick and Morty APP</h1>
+            <h1 className="textCenter appTitle">The Rick and Morty APP</h1>
 
             {items ? <CharacterList items={items.results} /> : null}
         </div>

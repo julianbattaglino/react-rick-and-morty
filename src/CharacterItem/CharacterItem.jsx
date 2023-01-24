@@ -10,10 +10,6 @@ const CharacterItem = ({ item }) => {
                     <div className="cardContent">
                         <p>Name: {item.name}</p>
                         <p className="status">Status: {item.status} - {item.species}</p>
-                        <p>Gender: {item.gender}</p>
-                        <p>Last known location:: {item.location.name}</p>
-                        <p>Origin: {item.origin.name}</p>
-                        <p>First seen in: {item.episode[0]}</p>
                     </div>
                 </article>
             </Link>

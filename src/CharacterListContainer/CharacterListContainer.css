@@ -2,3 +2,9 @@
     display: block;
     margin: auto;
 }
+
+@media (max-width: 767px) {
+    .appTitle {
+        font-size: 24px;
+    }
+}
